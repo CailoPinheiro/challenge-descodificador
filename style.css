@@ -36,7 +36,7 @@ textarea {
 .button {
     width: fit-content;
     padding: 10px 0px;
-    width: 150px;
+    width: 120px;
     border-radius: 10px;
     color: var(--color-alura);
     font-weight: bold;
@@ -57,9 +57,9 @@ textarea {
 
 .button-area {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    gap: 50px;
+    gap:30px;
 }
 
 .box {
@@ -125,5 +125,5 @@ textarea {
 }
 
 .box-right textarea {
-    display: none;
+    
 }
