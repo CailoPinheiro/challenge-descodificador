@@ -81,7 +81,6 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-
 // quando a textarea de id codificada tiver vazia, exibe um conteúdo. Quando não estiver vazia, exibe outro conteúdo.
 function swap() {
   const mensagem = document.getElementById("msg");
