@@ -10,7 +10,7 @@
     --bg-color: #F3F5FC;
     --bg-color-less: #eceff7;
     --color-alura: #0A3871;
-    --icon-color: rgb(129, 229, 173);
+    --icon-color: rgb(21, 21, 21);
 }
 
 body {
@@ -21,11 +21,19 @@ body {
 
 
 header {
-    padding: 40px 0px 40px 40px;
+    padding: 30px 30px 20px 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100vw;
+}
+
+header > :nth-child(2) {
+    align-self: flex-end;
 }
 
 header img {
-    width: 20px;
+    width: 20px;    
 }
 
 textarea {
@@ -38,11 +46,12 @@ textarea {
     border-color: var(--color-alura);
 }
 
-
-
 .box {
     margin: auto;
     width: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
 .main {
@@ -69,6 +78,11 @@ textarea {
     background-color: var(--color-alura);
     color: var(--bg-color);
 }
+
+.box-left span:nth-child(4) {
+    align-self: flex-end;
+    margin-top: auto;
+  }
 
 .box-left span {
     display: flex;
@@ -166,20 +180,24 @@ textarea {
 
 .button-area {
     display: flex;
+    flex-direction: row;
     align-items: center;
     gap: 20px;
 }
 
 #credits {
+    width: fit-content;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     gap: 10px;
-    font-size: 16px;
-    background-color: rgba(0, 0, 0, 0.102);
-    padding: 20px;
-    border-radius: 15px;
-    color: rgb(137, 238, 170);
+    font-size: 12px;
+    font-weight:500;
+    padding: 10px;
+    background-color: rgb(137, 238, 170);
+    border-radius: 10px;
+    color: black;
+    margin: auto;
 }
 
 #credits-icons {
@@ -214,7 +232,12 @@ textarea {
     height: 20px;
 }
 
-/* @media (max-width: 1200px) {
+@media (max-width: 1200px) {
+
+    textarea {
+        width: 80vw;
+        max-width: 450px;
+    }
     .main {
         border-radius: 25px;
         background-color: var(--color-alura);
@@ -222,9 +245,45 @@ textarea {
         flex-direction: column;
         width: fit-content;
         margin: auto;
+        padding: 0px;
+        max-width: 800px;
     }
 
     .box {
-        width: fit-content;
+        width: 500px;
+        min-width: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+        place-content: center;
+        gap: 0px;
     }
-} */
+
+    .box-content {
+        height: fit-content;
+    }
+
+    .box-left {
+        padding: 0px;
+    }
+
+    .box-right {
+        margin: 0px;
+    }
+
+    header {
+        place-content: center;
+        margin: auto;
+        padding: 20px;
+    }
+
+    header img {
+        width: 20px;
+    }
+
+    header #credits {
+        display: none;
+    }
+
+}
