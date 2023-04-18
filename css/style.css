@@ -19,7 +19,6 @@ body {
     height: 100vh;
 }
 
-
 header {
     padding: 30px 30px 20px 30px;
     display: flex;
@@ -29,10 +28,6 @@ header {
     margin: auto;
     width: 100vw;
 }
-
-/* header> :nth-child(2) {
-    align-self: flex-end;
-} */
 
 header img {
     width: 20px;
@@ -269,7 +264,7 @@ textarea {
         flex-direction: column;
         width: fit-content;
         margin: auto;
-        padding: 0px;
+        padding: 10px 0px 0px 0px;
         max-width: 800px;
     }
 
@@ -299,9 +294,14 @@ textarea {
 
     .box-right {
         margin: 0px;
+        padding-top: 30px;
         display: flex;
         flex-direction: column-reverse;
-        gap: 0px;
+        gap: 10px;
+    }
+
+    .box-right h3 {
+        font-size: 20px;
     }
 
     .box-right img {
@@ -383,5 +383,4 @@ textarea {
         width: 30px;
         height: 30px;
     }
-
 }

@@ -18,10 +18,8 @@ const enter = "e";
 const imes = "i";
 const ober = "o";
 const ufat = "u";
-// seleciona os botões e as textareas
 
 document.addEventListener("DOMContentLoaded", function () {
-  // coloque aqui o trecho de código que tenta acessar elementos HTML
   // adiciona um listener no botão codificar
   buttonCodificar.addEventListener("click", function codificar() {
     // obtém o texto da textarea normal e verifica se é válido
@@ -88,10 +86,9 @@ document.addEventListener("DOMContentLoaded", function () {
 function swap() {
   const mensagem = document.getElementById("msg");
   const codificada = document.getElementById("codificada");
-
   if (!(codificada.value == "")) {
     let contentNormal =
-      "<h3>Compartilhe sua mensagem com algum amigo!</h3><lottie-player src='https://lottie.host/e5f839f3-e731-4565-a831-1540ee5e01e6/1m7DLfadrN.json'background='transparent' speed='1' loop autoplay></lottie-player>";
+      "<h3>Compartilhe sua mensagem com algum amigo!</h3><lottie-player src='https://lottie.host/e5f839f3-e731-4565-a831-1540ee5e01e6/1m7DLfadrN.json'background='transparent' speed='1' loop autoplay></lottie-player><span>#challengeONE</span>";
     mensagem.innerHTML = contentNormal;
   } else {
     setTimeout(() => {
