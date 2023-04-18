@@ -60,6 +60,7 @@
                 <div class="button-area">
                     <button class="button" id="codificar">Codificar</button>
                     <button class="button" id="decodificar">Descodificar</button>
+                    <button class="button limpar-mobile" onclick="limparOutput()">Limpar</button>
                 </div>
                 <span>
                     <img src="assets/icon-aviso.svg" alt="">
@@ -70,6 +71,10 @@
             <div class="box-right box-content">
                 <div id="b">
                     <textarea id="codificada" cols="30" rows="10" placeholder="Sua mensagem aparecerá aqui!"></textarea>
+                    <div class="button-mobile">
+                        <button class="button limpar-mobile" onclick="limparOutput()">Limpar</button>
+                        <button class="button copiar-mobile" onclick="copiar()">Copiar</button>
+                    </div>
                     <div id="trash-copy-right">
                         <img id="limpar" onclick="limparOutput()" src="assets/delete.svg" alt="limpar">
                         <img id="copiar" src="assets/copy.svg" alt="copiar" onclick="copiar()">

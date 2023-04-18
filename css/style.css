@@ -28,12 +28,12 @@ header {
     width: 100vw;
 }
 
-header > :nth-child(2) {
+header> :nth-child(2) {
     align-self: flex-end;
 }
 
 header img {
-    width: 20px;    
+    width: 20px;
 }
 
 textarea {
@@ -82,7 +82,7 @@ textarea {
 .box-left span:nth-child(4) {
     align-self: flex-end;
     margin-top: auto;
-  }
+}
 
 .box-left span {
     display: flex;
@@ -125,6 +125,11 @@ textarea {
     flex-direction: column;
     align-items: center;
     gap: 20px;
+}
+
+.limpar-mobile,
+.copiar-mobile {
+    display: none;
 }
 
 #a {
@@ -192,7 +197,7 @@ textarea {
     align-items: center;
     gap: 10px;
     font-size: 12px;
-    font-weight:500;
+    font-weight: 500;
     padding: 10px;
     background-color: rgb(137, 238, 170);
     border-radius: 10px;
@@ -232,12 +237,13 @@ textarea {
     height: 20px;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 800px) {
 
     textarea {
         width: 80vw;
         max-width: 450px;
     }
+
     .main {
         border-radius: 25px;
         background-color: var(--color-alura);
@@ -270,6 +276,14 @@ textarea {
 
     .box-right {
         margin: 0px;
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 0px;
+    }
+
+    .box-right img {
+        width: 150px;
+
     }
 
     header {
@@ -286,4 +300,21 @@ textarea {
         display: none;
     }
 
+    #trash-copy-left,
+    #trash-copy-right {
+        display: none;
+    }
+
+    .limpar-mobile,
+    .copiar-mobile {
+        display: block;
+    }
+
+    .button-mobile {
+        display: flex;
+        flex-direction: row;
+        place-content: center;
+        gap: 40px;
+        margin-top: 30px;
+    }
 }
