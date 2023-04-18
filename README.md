@@ -1,4 +1,4 @@
-# challenge-decodificador
+# challenge-descodificador
 Minha participação do desafio proposto pelo programa ONE em parceria com a Alura.
 ## O challenge consiste em codificar e descodificar mensagens onde cada vogal corresponde a uma sequência de caracteres específica e vice versa:
 
