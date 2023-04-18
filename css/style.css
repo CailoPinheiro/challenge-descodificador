@@ -272,6 +272,11 @@ textarea {
 
     .box-left {
         padding: 0px;
+        gap: 30px;
+    }
+
+    .box-left span {
+        font-size: 11px;
     }
 
     .box-right {
@@ -283,13 +288,22 @@ textarea {
 
     .box-right img {
         width: 150px;
+        display: none;
+    }
 
+    .box-right lottie-player {
+        display: none;
+    }
+
+    .box-right textarea {
+        margin-top: 20px;
     }
 
     header {
         place-content: center;
         margin: auto;
         padding: 20px;
+        width: fit-content;
     }
 
     header img {
@@ -316,5 +330,13 @@ textarea {
         place-content: center;
         gap: 40px;
         margin-top: 30px;
+        margin-bottom: 10px;
+    }
+
+    .button-area {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 15px;
     }
 }

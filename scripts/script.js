@@ -119,7 +119,5 @@ function limparOutput() {
 
 // copia o valor da textarea output
 function copiar() {
-  
     navigator.clipboard.writeText(codificada.value);
-  
 }
